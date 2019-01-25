@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5697f2"
+    tools:context=".MainActivity">
+    
+    <!--This relative layout is main one and captures the whole screen -->
+    <!--tools:context  is the name of activity-->
+    <!--id tag help to detect that widget in java file-->
+    <!--width, height : match parent means occupy whole screen width or height   and   wrap content means occupy written word space only-->
+    <!--background used to change background color, u can also set the color from small square on LHS near line number-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/countertext"
+        android:textSize="30sp"
+        android:id="@+id/txt1"
+        />
+    <!--give texts in sp to make it more generic-->
+    <!--try to mention all texts in string.xml file and then take it here,  use   ctrl + space  for autosuggestion ,  android:text="@string/countertext"   is used to connect this text to string.xml text-->
+    <!--try to avoid giving hardcoded values, use ctrl+space  to see the possible options-->
+    <!--android:id="@+id/txt1"    this is used to take  ids to a java file-->
+    <!--android:text="@string/countertext"   shows default text set from string.xml -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/counterbtn"
+        android:id="@+id/btn1"
+        />
+    <!--try to avoid giving hardcoded values like 50 dp bcz different screens accomodate different number of pixels -->
+    <!--marginTop gives margin from the top of the screen-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:text="@string/resetbtn"
+        android:id="@+id/btn2"
+        />
+    <!--marginLeft gives margin from left end of the screen-->
+
+</RelativeLayout>

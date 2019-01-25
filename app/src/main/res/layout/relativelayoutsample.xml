@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Relative Layout does not need orientation, but linear layout does-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn2"
+        android:layout_below="@+id/btn1"
+        />
+
+    <!--android:layout_below="@+id/btn1"      means this button will come below btn1    This is only possible in Relative layout and not in Linear Layout-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn3"
+        android:layout_below="@+id/btn2"
+        />
+
+    <!--android:layout_below="@+id/btn2"      means this button will come below btn2    This is only possible in Relative layout and not in Linear Layout-->
+
+
+
+</RelativeLayout>

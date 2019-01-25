@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyFirstProject</string>
+    <string name="countertext">Your Counter is</string>
+    <string name="counterbtn">Counter</string>
+    <string name="resetbtn">Reset</string>
+
+
+</resources>
